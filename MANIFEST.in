@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include flexgc *.css
+recursive-include flexgc *.csv
+recursive-include flexgc *.html
+recursive-include flexgc *.ico
+recursive-include flexgc *.js
+recursive-include flexgc *.json
+recursive-include flexgc *.md
+recursive-include flexgc *.png
+recursive-include flexgc *.py
+recursive-include flexgc *.svg
+recursive-include flexgc *.txt
+recursive-exclude flexgc *.pyc
