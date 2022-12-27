@@ -1,0 +1,169 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:site_url",
+ "creation": "2022-11-29 10:45:18.811955",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "site_url",
+  "server",
+  "bench_version",
+  "admin_pwd",
+  "remarks",
+  "cb_1",
+  "status",
+  "end_customer",
+  "site_creation_date",
+  "site_inactive_from_date",
+  "site_deletion_date",
+  "site_transfer_date",
+  "customer",
+  "section_break_14",
+  "custom_app_detail"
+ ],
+ "fields": [
+  {
+   "fieldname": "site_url",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Site URL",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "server",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Server",
+   "options": "Server",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "server.bench_version",
+   "fieldname": "bench_version",
+   "fieldtype": "Data",
+   "label": "Bench Version",
+   "read_only": 1
+  },
+  {
+   "fieldname": "admin_pwd",
+   "fieldtype": "Data",
+   "label": "Admin Pwd"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "cb_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Active",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Active\nInactive\nDeleted\nTransferred",
+   "reqd": 1
+  },
+  {
+   "fieldname": "end_customer",
+   "fieldtype": "Data",
+   "label": "End Customer"
+  },
+  {
+   "fieldname": "site_creation_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Site Creation Date",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.status ==\"Inactive\"",
+   "fieldname": "site_inactive_from_date",
+   "fieldtype": "Date",
+   "label": "Site Inactive From Date",
+   "mandatory_depends_on": "eval:doc.status ==\"Inactive\""
+  },
+  {
+   "depends_on": "eval:doc.status ==\"Deleted\"",
+   "fieldname": "site_deletion_date",
+   "fieldtype": "Date",
+   "label": "Site Deletion Date",
+   "mandatory_depends_on": "eval:doc.status ==\"Deleted\""
+  },
+  {
+   "fieldname": "site_transfer_date",
+   "fieldtype": "Date",
+   "label": "Site Transfer Date",
+   "mandatory_depends_on": "eval:doc.status==\"Transferred\""
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "section_break_14",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "custom_app_detail",
+   "fieldtype": "Table",
+   "label": "Custom App Detail",
+   "options": "Custom App Detail"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-11-30 12:13:07.236006",
+ "modified_by": "Administrator",
+ "module": "Flexgc",
+ "name": "Site",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [
+  {
+   "color": "Green",
+   "title": "Active"
+  },
+  {
+   "color": "Gray",
+   "title": "Inactive"
+  },
+  {
+   "color": "Red",
+   "title": "Deleted"
+  },
+  {
+   "color": "Yellow",
+   "title": "Transferred"
+  }
+ ],
+ "track_changes": 1
+}

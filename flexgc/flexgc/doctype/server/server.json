@@ -1,0 +1,160 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:server",
+ "creation": "2022-11-29 10:35:45.878588",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "server",
+  "ip_address",
+  "hosted_on",
+  "server_creation_date",
+  "owned_by_customer",
+  "remarks",
+  "cb_1",
+  "os",
+  "bench_version",
+  "hardware",
+  "root_pwd",
+  "frappe_pwd",
+  "mysql_pwd",
+  "disabled",
+  "section_break_14",
+  "custom_app_detail"
+ ],
+ "fields": [
+  {
+   "fieldname": "server",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Server",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "ip_address",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "IP Address",
+   "reqd": 1
+  },
+  {
+   "default": "Contabo",
+   "fieldname": "hosted_on",
+   "fieldtype": "Select",
+   "label": "Hosted On",
+   "options": "Contabo\nDigital Ocean"
+  },
+  {
+   "fieldname": "hardware",
+   "fieldtype": "Data",
+   "label": "Hardware"
+  },
+  {
+   "fieldname": "owned_by_customer",
+   "fieldtype": "Link",
+   "label": "Owned By Customer",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cb_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "os",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "OS",
+   "options": "Ubuntu 22\nUbuntu 20\nUbuntu 18\nUbuntu 16.04",
+   "reqd": 1
+  },
+  {
+   "fieldname": "bench_version",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Bench Version",
+   "options": "V14\nV13\nV12\nV11",
+   "reqd": 1
+  },
+  {
+   "fieldname": "root_pwd",
+   "fieldtype": "Data",
+   "label": "root pwd"
+  },
+  {
+   "fieldname": "frappe_pwd",
+   "fieldtype": "Data",
+   "label": "frappe pwd"
+  },
+  {
+   "fieldname": "mysql_pwd",
+   "fieldtype": "Data",
+   "label": "mysql pwd"
+  },
+  {
+   "default": "0",
+   "fieldname": "disabled",
+   "fieldtype": "Check",
+   "label": "Disabled"
+  },
+  {
+   "fieldname": "server_creation_date",
+   "fieldtype": "Date",
+   "label": "Server Creation Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_14",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "custom_app_detail",
+   "fieldtype": "Table",
+   "label": "Custom App Detail",
+   "options": "Custom App Detail"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "Site",
+   "link_fieldname": "server"
+  }
+ ],
+ "modified": "2022-11-29 12:06:23.435812",
+ "modified_by": "Administrator",
+ "module": "Flexgc",
+ "name": "Server",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "server",
+ "track_changes": 1
+}

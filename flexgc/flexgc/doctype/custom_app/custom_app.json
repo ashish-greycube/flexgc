@@ -1,0 +1,54 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:custom_app_name",
+ "creation": "2022-11-29 11:08:58.536459",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "custom_app_name",
+  "repo_url"
+ ],
+ "fields": [
+  {
+   "fieldname": "custom_app_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Custom App Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "repo_url",
+   "fieldtype": "Data",
+   "label": "Repo URL"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-11-29 12:00:59.513516",
+ "modified_by": "Administrator",
+ "module": "Flexgc",
+ "name": "Custom App",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
