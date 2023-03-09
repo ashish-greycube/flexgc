@@ -12,6 +12,7 @@
   "site_url",
   "server",
   "bench_version",
+  "server_ip",
   "admin_pwd",
   "remarks",
   "cb_1",
@@ -121,11 +122,17 @@
    "fieldtype": "Table",
    "label": "Custom App Detail",
    "options": "Custom App Detail"
+  },
+  {
+   "fetch_from": "server.ip_address",
+   "fieldname": "server_ip",
+   "fieldtype": "Data",
+   "label": "IP"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-11-30 12:13:07.236006",
+ "modified": "2023-03-09 09:06:25.412191",
  "modified_by": "Administrator",
  "module": "Flexgc",
  "name": "Site",
