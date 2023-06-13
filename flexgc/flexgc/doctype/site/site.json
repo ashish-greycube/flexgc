@@ -23,6 +23,8 @@
   "site_deletion_date",
   "site_transfer_date",
   "customer",
+  "per_month",
+  "per_year",
   "section_break_14",
   "custom_app_detail"
  ],
@@ -128,11 +130,25 @@
    "fieldname": "server_ip",
    "fieldtype": "Data",
    "label": "IP"
+  },
+  {
+   "fieldname": "per_month",
+   "fieldtype": "Float",
+   "label": "Per Month",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "fieldname": "per_year",
+   "fieldtype": "Int",
+   "label": "Per Year",
+   "non_negative": 1,
+   "precision": "2"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-03-09 09:06:25.412191",
+ "modified": "2023-06-01 11:11:40.983804",
  "modified_by": "Administrator",
  "module": "Flexgc",
  "name": "Site",

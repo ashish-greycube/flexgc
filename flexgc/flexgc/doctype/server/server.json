@@ -46,7 +46,7 @@
    "fieldname": "hosted_on",
    "fieldtype": "Select",
    "label": "Hosted On",
-   "options": "Contabo\nDigital Ocean"
+   "options": "Contabo\nDigital Ocean\nFrappe Cloud"
   },
   {
    "fieldname": "hardware",
@@ -132,7 +132,7 @@
    "link_fieldname": "server"
   }
  ],
- "modified": "2022-11-29 12:06:23.435812",
+ "modified": "2023-06-01 09:14:23.835523",
  "modified_by": "Administrator",
  "module": "Flexgc",
  "name": "Server",
