@@ -70,7 +70,7 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "OS",
-   "options": "Ubuntu 22\nUbuntu 20\nUbuntu 18\nUbuntu 16.04",
+   "options": "Ubuntu 24\nUbuntu 23\nUbuntu 22\nUbuntu 20\nUbuntu 18\nUbuntu 16.04",
    "reqd": 1
   },
   {
@@ -79,7 +79,7 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Bench Version",
-   "options": "V14\nV13\nV12\nV11",
+   "options": "V15\nV14\nV13\nV12\nV11",
    "reqd": 1
   },
   {
@@ -132,7 +132,7 @@
    "link_fieldname": "server"
   }
  ],
- "modified": "2023-06-01 09:14:23.835523",
+ "modified": "2025-11-11 13:36:47.621199",
  "modified_by": "Administrator",
  "module": "Flexgc",
  "name": "Server",
@@ -148,6 +148,17 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Website Manager",
    "share": 1,
    "write": 1
   }
